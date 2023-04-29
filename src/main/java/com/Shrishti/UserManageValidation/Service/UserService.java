@@ -29,8 +29,16 @@ public class UserService {
     }
 
     public String saveUser(User user){
-        userRepository.save(user);
-        return "User Saved Successfully!!!";
+        boolean insertionStatus = userRepository.save(user);//in our case...always true
+        if(insertionStatus)
+        {
+            return "User added successfully!!!!!";
+        }
+        else
+        {
+            return "Failed!!!!!....User Not Added!!!";
+
+        }
     }
 
     public String updateUser(String id, User newUser){

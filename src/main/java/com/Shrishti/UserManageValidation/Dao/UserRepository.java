@@ -13,14 +13,16 @@ public class UserRepository {
 
     public UserRepository() {
         UserList = new ArrayList<>();
+        UserList.add(new User("0", "Anu", "05-12-2000", "Anu@1234", "+918081009534", "23-12-2023", "12:00"));
     }
 
     public List<User> getAllUsers(){
         return UserList;
     }
 
-    public void save(User user){
+    public boolean save(User user){
         UserList.add(user);
+        return true;
     }
 
     public boolean remove(String id){
