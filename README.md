@@ -102,11 +102,17 @@ public class UserController {
 ## :four: Project Summary
 ### :o: Project result 
 #### :purple_square: POST API : http://localhost:8080/addUser
+![Screenshot (761)](https://user-images.githubusercontent.com/47708011/235440664-5418cae6-ce02-441d-b08c-813e22478f33.png)
 
+#### :purple_square: GET API (For All Users) : http://localhost:8080/getAllUsers
+![Screenshot (762)](https://user-images.githubusercontent.com/47708011/235440805-0a888932-f5f7-42f9-8d1d-dbeba14f043b.png)
 
-#### :purple_square: GET API (For All Restaurent) : http://localhost:8080/api/restro-app/findAll-restaurent
+#### :purple_square: GET API (User BY ID) : http://localhost:8080/getUserById
+![Screenshot (763)](https://user-images.githubusercontent.com/47708011/235441053-0d8df3ef-c091-44d6-ac7e-1172b2006b6b.png)
 
-#### :purple_square: PUT API (For All Restaurent) : http://localhost:8080/api/restro-app/update-restaurent/number/{number}
+#### :purple_square: PUT API : http://localhost:8080/updateUser/id/{id}
+![Screenshot (764)](https://user-images.githubusercontent.com/47708011/235441844-77390b5e-1f7c-4226-a25c-5510d5634d91.png)
+![Screenshot (766)](https://user-images.githubusercontent.com/47708011/235441941-628423de-d12c-4f33-91e5-43bb5c577ab1.png)
 
-#### :purple_square: PUT API (For All Restaurent) : http://localhost:8080/api/restro-app/delete-restaurent/number/1001
+#### :purple_square: DELETE APIhttp://localhost:8080/api/restro-app/delete-restaurent/number/1001
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
