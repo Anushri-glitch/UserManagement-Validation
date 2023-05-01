@@ -110,9 +110,11 @@ public class UserController {
 #### :purple_square: GET API (User BY ID) : http://localhost:8080/getUserById
 ![Screenshot (763)](https://user-images.githubusercontent.com/47708011/235441053-0d8df3ef-c091-44d6-ac7e-1172b2006b6b.png)
 
-#### :purple_square: PUT API : http://localhost:8080/updateUser/id/{id}
+#### :purple_square: PUT API : http://localhost:8080/updateUser/id/{userId}
 ![Screenshot (764)](https://user-images.githubusercontent.com/47708011/235441844-77390b5e-1f7c-4226-a25c-5510d5634d91.png)
 ![Screenshot (766)](https://user-images.githubusercontent.com/47708011/235441941-628423de-d12c-4f33-91e5-43bb5c577ab1.png)
 
-#### :purple_square: DELETE APIhttp://localhost:8080/api/restro-app/delete-restaurent/number/1001
+#### :purple_square: DELETE API : http://localhost:8080/updateUser/id/{userId}
+![Screenshot (767)](https://user-images.githubusercontent.com/47708011/235442893-e5c959d8-1e0e-4fd4-b9df-b7551947b746.png)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
