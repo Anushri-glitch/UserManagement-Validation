@@ -20,8 +20,8 @@ public class UserController {
         return userService.getAllUsers();
     }
 
-    @RequestMapping(value = "/getUserById/{id}", method= RequestMethod.GET)
-    public User getUserById(String userId){
+    @RequestMapping(value = "/getUserById/{userId}", method = RequestMethod.GET)
+    public User getUserById(@PathVariable String userId){
         return userService.getUserById(userId);
     }
 
@@ -30,14 +30,14 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-    @PutMapping(value = "/updateUser/id/{id}")
+    @PutMapping(value = "/updateUser/id/{userId}")
     public String updateUser(@PathVariable String userId, @RequestBody User user){
         return userService.updateUser(userId, user);
     }
 
-    @DeleteMapping(value = "/deleteUser/id/{id}")
-    public String deleteUser(String id){
-        return userService.deleteUser(id);
+    @DeleteMapping(value = "/deleteUser/id/{userId}")
+    public String deleteUser(@PathVariable String userId){
+        return userService.deleteUser(userId);
     }
 
 

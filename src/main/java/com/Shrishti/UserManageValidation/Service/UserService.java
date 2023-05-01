@@ -17,11 +17,11 @@ public class UserService {
         return userRepository.getAllUsers();
     }
 
-    public User getUserById(String id){
+    public User getUserById(String userId){
         List<User> newUserList = userRepository.getAllUsers();
 
         for(User user : newUserList){
-            if(user.getUserId().equals(id)){
+            if(user.getUserId().equalsIgnoreCase(userId)){
                 return user;
             }
         }
@@ -41,20 +41,21 @@ public class UserService {
         }
     }
 
-    public String updateUser(String id, User newUser){
+    public String updateUser(String userId, User newUser){
         List<User> newUserList = userRepository.getAllUsers();
 
         for(User user : newUserList){
-            if(user.getUserId().equals(id)){
+            if(user.getUserId().equalsIgnoreCase(userId)){
+                userRepository.remove(userId);
                 userRepository.save(newUser);
             }
         }
         return "user Updated!!!";
     }
 
-    public String deleteUser(String id){
+    public String deleteUser(String userId){
         boolean deleted = false;
-        deleted = userRepository.remove(id);
+        deleted = userRepository.remove(userId);
         if(deleted){
             return "User Deleted!!!";
         }

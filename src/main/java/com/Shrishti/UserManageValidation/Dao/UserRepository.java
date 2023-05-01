@@ -25,9 +25,9 @@ public class UserRepository {
         return true;
     }
 
-    public boolean remove(String id){
+    public boolean remove(String userId){
         for(User user : UserList){
-            if(user.getUserId().equals(id)){
+            if(user.getUserId().equalsIgnoreCase(userId)){
                 UserList.remove(user);
                 return true;
             }
